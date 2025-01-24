@@ -5,32 +5,32 @@ package token
 type TokenType string
 
 type Token struct {
-    Type    TokenType
-    Literal string
+	Type    TokenType
+	Literal string
 }
 
 const (
-    ILLEGAL = "ILLEGAL"
-    EOF = "EOF"
+	ILLEGAL = "ILLEGAL"
+	EOF     = "EOF"
 
-    // Identifiers + literals
-    IDENT = "IDENT" // variable names
-    INT = "INT" // 12345
-    
-    // Operators
-    ASSIGN = "="
-    PLUS = "+"
+	// Identifiers + literals
+	IDENT = "IDENT" // variable names
+	INT   = "INT"   // 12345
 
-    // Delimiters
-    COMMA = ","
-    SEMICOLON = ";"
+	// Operators
+	ASSIGN = "="
+	PLUS   = "+"
 
-    LPAREN = "("
-    RPAREN = ")"
-    LBRACE = "{"
-    RBRACE = "}"
+	// Delimiters
+	COMMA     = ","
+	SEMICOLON = ";"
 
-    // Keywords
-    FUNCTION = "FUNCTION"
-    LET = "LET"
+	LPAREN = "("
+	RPAREN = ")"
+	LBRACE = "{"
+	RBRACE = "}"
+
+	// Keywords
+	FUNCTION = "FUNCTION"
+	LET      = "LET"
 )
